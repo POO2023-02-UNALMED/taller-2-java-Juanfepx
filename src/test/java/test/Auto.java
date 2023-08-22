@@ -24,7 +24,7 @@ public class Auto {
         if (motor.registro == this.registro) {
             int origen = motor.registro;
             for (Asiento asiento : asientos) {
-                if (asiento.registro != origen) {
+                if (asiento != null && asiento.registro != origen) {
                     valor = false;
                     break;
                 }
